@@ -1,0 +1,59 @@
+html{
+    font-size: 10px;
+    background: url('./background.jpg');
+    background-size: cover;
+}
+
+body, html{
+    margin: 0;  /*Define a margem de ambos body e html como zero. A margem é o espaço ao redor de um elemento HTML.*/
+    padding: 0; /* Define o preenchimento de ambos body e html como zero. O preenchimento é o espaço dentro de um elemento HTML, entre a borda do elemento e o conteúdo dentro dele.*/
+    font-family: sans-serif; /*Define a família de fontes para ser usada em ambos body e html como uma fonte "sans-serif". Isso significa que o navegador irá escolher uma fonte sem serifa (sem linhas extras nas extremidades dos caracteres), que é uma escolha comum para a legibilidade em tela.*/
+}
+
+/*A classe .keys é destinada a um contêiner ou grupo de elementos que são apresentados de uma maneira específica. Aqui está o que cada propriedade CSS na classe .keys faz:
+
+display: flex;: Isso faz com que os elementos com a classe .keys sejam exibidos como um contêiner flexível, o que permite fácil manipulação do layout e alinhamento dos elementos filhos.
+flex: 1;: Isso permite que o contêiner flexível (.keys) cresça ou encolha para ocupar o espaço disponível no contêiner pai.
+min-height: 100vh;: Define a altura mínima do contêiner como 100% da altura da janela de visualização (viewport). Isso garante que o contêiner tenha pelo menos a altura da janela, garantindo que todos os elementos dentro dele sejam visíveis.
+align-items: center;: Centraliza verticalmente os elementos filhos dentro do contêiner flexível.
+justify-content: center;: Centraliza horizontalmente os elementos filhos dentro do contêiner flexível.*/
+
+.keys{
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key{
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color:white;
+    background: rgb(246, 255, 0);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+  
+kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
